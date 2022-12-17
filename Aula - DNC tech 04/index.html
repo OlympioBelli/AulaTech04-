@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section id="navibar">
+        <a href="#">Home</a>>
+        <a href="#">Cadastro de Medicamentos</a>>
+        <a href="#">Cadastro de Vacina</a>>
+        <a href="#">Cadastro de Cosméticos</a>>
+    </section>
+
+    <header>
+        <img src=".\assets\remedi.png" alt="logo de remedio">
+        <div>
+            <h1>Cadastro de Medicamento</h1>
+            <h2>Farmácia da Gente</h2>
+        </div>
+    </header>
+    <section id="form-grid">
+        <div>
+            <form onsubmit="addmed()">
+                <label for="name">Nome do Medicamento</label>
+                <input type="text" name="name" id ="name" required>
+                <label for="qnt">Quantidade Disponível</label>
+                <input type="number" name="qnt" id="qnt" required>
+                <label for="classe">Classe do Medicamento</label>
+                <input type="text" name="classe" id = "class" required>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+        </div>
+
+        <div>
+            <table id="table">
+                <th>ID</th>
+                <th>Medicamento</th>
+                <th>Quantidade</th>
+                <th>Classe do Medicamento</th>
+                <th>Remover</th>
+            </table>
+        </div>
+    </section>
+
+    <script src="./addmed.js">
+</body>
+</html>
